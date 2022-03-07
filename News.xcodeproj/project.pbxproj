@@ -18,6 +18,7 @@
 		9246B1AD27D5388C00C3A5DE /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246B1AC27D5388C00C3A5DE /* ArticleModel.swift */; };
 		9246B1AF27D6447400C3A5DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246B1AE27D6447400C3A5DE /* DetailViewController.swift */; };
 		9246B1B127D68A8A00C3A5DE /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246B1B027D68A8A00C3A5DE /* ArticleCell.swift */; };
+		9246B1B327D6B49800C3A5DE /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246B1B227D6B49800C3A5DE /* CacheManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9246B1AC27D5388C00C3A5DE /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 		9246B1AE27D6447400C3A5DE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9246B1B027D68A8A00C3A5DE /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		9246B1B227D6B49800C3A5DE /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				9246B1AC27D5388C00C3A5DE /* ArticleModel.swift */,
 				9246B1AA27D536B800C3A5DE /* ArticleService.swift */,
 				9246B1A827D533B500C3A5DE /* Article.swift */,
+				9246B1B227D6B49800C3A5DE /* CacheManager.swift */,
 				9246B19A27D5335C00C3A5DE /* Main.storyboard */,
 				9246B19D27D5335E00C3A5DE /* Assets.xcassets */,
 				9246B19F27D5335E00C3A5DE /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9246B1B127D68A8A00C3A5DE /* ArticleCell.swift in Sources */,
+				9246B1B327D6B49800C3A5DE /* CacheManager.swift in Sources */,
 				9246B1AB27D536B800C3A5DE /* ArticleService.swift in Sources */,
 				9246B1A927D533B500C3A5DE /* Article.swift in Sources */,
 				9246B19927D5335C00C3A5DE /* ViewController.swift in Sources */,
