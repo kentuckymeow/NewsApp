@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArticleCell" rowHeight="100" id="z9R-HA-tI3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArticleCell" rowHeight="100" id="z9R-HA-tI3" customClass="ArticleCell" customModule="News" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z9R-HA-tI3" id="c52-eN-rW2">
@@ -33,7 +33,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zfn-N3-7SG">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zfn-N3-7SG">
                                                     <rect key="frame" x="290" y="0.0" width="124" height="100"/>
                                                 </imageView>
                                             </subviews>
@@ -50,6 +50,10 @@
                                             <constraint firstItem="Zfn-N3-7SG" firstAttribute="width" secondItem="z9R-HA-tI3" secondAttribute="width" multiplier="0.3" id="qDd-u1-JUp"/>
                                             <constraint firstItem="Y0i-4U-jqM" firstAttribute="width" secondItem="z9R-HA-tI3" secondAttribute="width" multiplier="0.7" constant="-40" id="tP3-pa-kU5"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="articleImageView" destination="Zfn-N3-7SG" id="Hqx-Df-0Je"/>
+                                            <outlet property="headlineLabel" destination="Y0i-4U-jqM" id="j8B-PN-AUD"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
