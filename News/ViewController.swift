@@ -18,6 +18,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "News"
         
         // Set the viewcontroller as the datasource and delegate of the table view
         tableView.delegate = self
