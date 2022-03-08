@@ -20,7 +20,9 @@ class ArticleCell: UITableViewCell {
         
       // Clean up the cell before displaying the next article
         articleImageView.image = nil
-        headlineLabel.text = "" 
+        articleImageView.alpha = 0
+        headlineLabel.text = ""
+        headlineLabel.alpha = 0
         
         // Keep a reference to the article
         articleToDisplay = article
@@ -28,6 +30,14 @@ class ArticleCell: UITableViewCell {
         // Set the headline
         headlineLabel.text = articleToDisplay!.title
         
+        // Animated the label into view
+        UIView.animate(withDuration: 0.6, delay: 0, options: .curveEaseOut, animations: {
+            
+            self.headlineLabel.alpha = 1
+            
+        }, completion: nil)
+            
+            
         // Download and display the image
         
         // Check the article actually has an image
@@ -43,6 +53,12 @@ class ArticleCell: UITableViewCell {
             
             // There is image data, set the imageview and return
             articleImageView.image = UIImage(data: imageData)
+            
+            UIView.animate(withDuration: 0.6, delay: 0, options: .curveEaseOut, animations: {
+                
+                self.articleImageView.alpha = 1
+                
+            }, completion: nil)
             
             return
         }
@@ -76,6 +92,12 @@ class ArticleCell: UITableViewCell {
                         
                         // Dispaly the image data in the image view
                         self.articleImageView.image = UIImage(data: data!)
+                        
+                        UIView.animate(withDuration: 0.6, delay: 0, options: .curveEaseOut, animations: {
+                            
+                            self.articleImageView.alpha = 1
+                            
+                        }, completion: nil)
                         
                     }
                 }
