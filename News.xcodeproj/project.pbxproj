@@ -19,6 +19,7 @@
 		9246B1AF27D6447400C3A5DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246B1AE27D6447400C3A5DE /* DetailViewController.swift */; };
 		9246B1B127D68A8A00C3A5DE /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246B1B027D68A8A00C3A5DE /* ArticleCell.swift */; };
 		9246B1B327D6B49800C3A5DE /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246B1B227D6B49800C3A5DE /* CacheManager.swift */; };
+		9246B1B627D75F5300C3A5DE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9246B1B527D75F5300C3A5DE /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		9246B1AE27D6447400C3A5DE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9246B1B027D68A8A00C3A5DE /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		9246B1B227D6B49800C3A5DE /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		9246B1B527D75F5300C3A5DE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9246B1B627D75F5300C3A5DE /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +57,7 @@
 			children = (
 				9246B19327D5335C00C3A5DE /* News */,
 				9246B19227D5335C00C3A5DE /* Products */,
+				9246B1B427D75F5200C3A5DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +87,14 @@
 				9246B1A227D5335E00C3A5DE /* Info.plist */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		9246B1B427D75F5200C3A5DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9246B1B527D75F5300C3A5DE /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

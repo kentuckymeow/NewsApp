@@ -13,10 +13,37 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var webView: WKWebView!
     
+    var articleUrl:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        // Check that there's a url
+        if articleUrl != nil {
+            
+            // Create the URL object
+            let url = URL(string: articleUrl!)
+            
+            guard url != nil else {
+                // Couldn't create the URL object
+                return
+            }
+            
+            // Create the URLRequest object
+            let request = URLRequest(url: url!)
+            
+            // Load it in the webview
+            webView.load(request)
+            
+        }
+        
+       
+        
     }
     
 
